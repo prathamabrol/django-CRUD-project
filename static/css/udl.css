@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B0A990;
+}
+
+.bg-img{
+    background-image: url("../images/bg-img.jpg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(3px);
+  }
+
+  h1 {
+    text-align: center;
+    color: #e8e8e893;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.219);
+  }
+
+form {
+    max-width: 800px; 
+    margin: 20px auto;
+    background-color: #39304ab1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="textarea"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #B0A990;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="textarea"]:focus {
+    border-color: #4caf50;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; 
+}
+
+thead {
+   
+    color: #202030;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #ffd90043;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px 0 #ffd90043;
+    }
+    50% {
+      box-shadow: 0 0 10px 2.5px #ffd90043;
+    }
+    100% {
+      box-shadow: 0 0 5px 0 #ffd90043;
+    }
+  }
+
+th {
+    text-align: center;
+}
+
+tr {
+    background-color: #7D7461; 
+}
+
+tr:hover {
+    background-color: #b0a99057; /* Hover color for all rows */
+}
+thead:hover {
+    background-color: #7D7461; /* Hover color for all rows */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+}
