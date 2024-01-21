@@ -24,7 +24,7 @@ def create(request):
         print(m)
 
         # return HttpResponse("data stored successfully")
-        return redirect('/user-details')
+        return redirect('/userdetails')
 
 
 
@@ -40,7 +40,7 @@ def delete(request, rid):
     # return HttpResponse(f"Deleting record with id: {rid}")
     print("delete id=", rid)
     dl = Msg.objects.filter(id=rid).delete()
-    return redirect ("/user-details")
+    return redirect ("/userdetails")
 
 def edit(request, rid):
     if request.method == "GET":
@@ -59,5 +59,5 @@ def edit(request, rid):
         
         print(m)
 
-        return redirect("/user-details")
+        return redirect("/userdetails")
     
